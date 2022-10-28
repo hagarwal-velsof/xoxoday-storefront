@@ -1,0 +1,1 @@
+<button class="btn btn-primary" id="{{ $id }}" value="{{ $value }}" style="{{ $style }}" >{{ $slot }}</button>

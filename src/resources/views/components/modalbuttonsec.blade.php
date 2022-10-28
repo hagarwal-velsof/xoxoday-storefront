@@ -1,0 +1,1 @@
+<button class="btn btn-secondary" id="{{ $id }}" value="{{ $value }}" style="{{ $style }}" data-bs-dismiss="modal">{{ $slot }}</button>

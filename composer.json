@@ -1,0 +1,13 @@
+{
+    "name": "xoxoday/storefront",
+    "description": "This package contains the UI and functionality for one page store front.",
+    "autoload": {
+        "psr-4": {
+            "Xoxoday\\Storefront\\": "src/"
+        }
+    },
+    "require": {
+        "xoxoday/sms": "dev-main",
+        "doctrine/dbal": "^3.5"
+    }
+}

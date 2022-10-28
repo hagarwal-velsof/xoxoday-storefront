@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+header {
+  box-shadow: 0px 12px 24px rgba(10, 10, 10, 0.04);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  display: block;
+  max-width: 200px;
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  margin-bottom: 0 !important;
+  margin-left: 8px !important;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header-right .login-btn {
+  background-color: #565ADD;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.header-right .login-btn:hover {
+  background-color: #bc244d;
+}
+
+.main-section {
+  max-width: 980px;
+  margin: 40px auto;
+}
+
+/* prizes card */
+.prize-card {
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.prize-card .image-area {
+  margin-bottom: 15px;
+}
+
+.badge {
+  color: #000;
+  background: #EAEAFF;
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.prize-card .image-area .img {
+  display: block;
+  width: 100%;
+}
+
+.prize-card .content-area p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.prize-card .claim-btn {
+  border: 1px solid #565ADD;
+  color: #565ADD;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  padding: 4px 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.prize-card .claim-btn:hover {
+  border: 1px solid #bc244d;
+  color: #bc244d;
+}
+
+.prize-card .claim-btn-disabled:hover,
+.prize-card .claim-btn-disabled {
+  color: #C0C2FF;
+  border: 1px solid #C0C2FF;
+  cursor: default;
+}
+
+.redeem-points-link {
+  background-color: #1E1E1E;
+  color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.redeem-points-link:hover{
+  color: #fff;
+  background-color: #bc244d;
+}
+
+
+
+@media (max-width: 1920px){
+
+}
+
+@media (max-width: 1440px){
+
+}
+
+@media ( max-width: 1200px){
+
+}
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 992px){
+    
+}
+
+@media (max-width: 767px){
+  .header-logo{
+    max-width: 200px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .header-right p {
+    font-size: 14px;
+  }
+  
+  .header-right .login-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 565px){
+  .header-right p {
+    display: none;
+  }
+}
+
+@media (max-width: 320px){
+    
+}
+
+@media (max-width: 575px) {
+  
+  /* prize card  */
+  .prize-card {
+    margin: 0 auto 20px;
+    max-width: 430px;
+    position: static;
+  }
+
+  .prize-card .desc {
+    display: flex;
+  }
+
+  .prize-card .desc .image-area {
+    width: 40%;
+    min-width: 140px;
+  }
+
+  .prize-card .content-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6px;
+  }
+
+  .prize-card .badge {
+    position: static;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .prize-card .content-area p {
+    margin-bottom: 8px;
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .prize-card .claim-btn {
+    border: 1px solid #565ADD;
+    color: #565ADD;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .prize-card .claim-btn:hover {
+    border: 1px solid #bc244d;
+    color: #bc244d;
+  }
+
+  .prize-card .claim-btn-disabled:hover,
+  .prize-card .claim-btn-disabled {
+    color: #C0C2FF;
+    border: 1px solid #C0C2FF;
+    cursor: default;
+  }
+
+  .prize-card .desc .content-area {}
+
+}

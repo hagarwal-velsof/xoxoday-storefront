@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: radial-gradient(50% 50% at 50% 50%, #FFB06C 0%, #F75929 100%) !important;
+  height: 100%;
+}
+
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: url(../img/spinwheel_background.png);
+  background-color: transparent !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+
+}
+
+.top-logo {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+
+
+.top-logo img, .logo-img {
+  display: block;
+  width: 78%;
+  margin: 0 auto;
+}
+
+.main-section{
+  padding: 30px 10px;
+  margin: 0px auto;
+}
+
+.spin-wheel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.spin-wheel-img {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+}
+
+.spin-action-section {
+  padding: 0 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.spin-btn {
+  padding: 8px 16px;
+  background: #565ADD;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: auto;
+  border: none;
+  outline: none;
+}
+
+.bottom-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #EEEEEE;
+}

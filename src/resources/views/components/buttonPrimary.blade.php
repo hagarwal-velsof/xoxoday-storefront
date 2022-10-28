@@ -1,0 +1,1 @@
+<button class="btn-fluid {{ $class }}" id="{{ $id }}" value="{{ $value }}" style="{{ $style }}" >{{ $slot }}</button>

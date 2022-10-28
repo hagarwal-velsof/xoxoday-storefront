@@ -1,0 +1,1 @@
+<a href="javascript://" class="claim-btn claim-btn-disabled"  value="{{ $value }}" disabled="disabled" >{{ $slot }}</a>

@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+}
+
+header {
+  box-shadow: 0px 12px 24px rgba(10, 10, 10, 0.04);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  display: block;
+  max-width: 200px;
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header-right .loyality-btn {
+  background-color: #565ADD;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.header-right .loyality-btn:hover {
+  background-color: #bc244d;
+}
+
+.header-right .logout-btn {
+  background: #4B4B4B;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.header-right .logout-btn:hover {
+  background-color: #efefef;
+  color: #000;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-options {
+  display: none;
+}
+
+.main-section {
+  margin: 70px auto 30px;
+  padding: 10px 15px;
+}
+
+.box-img {
+  display: block;
+  margin: auto;
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.main-msg {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  color: #0A0A0A;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  margin: auto;
+  padding: 12px 20px;
+  border: 1px solid #ECECEC;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.product-card img {
+  display: block;
+  max-width: 90px;
+}
+
+.product-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0A0A0A;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.bottom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #6A6A6A;
+}
+
+@media (max-width: 767px) {
+  .header-logo {
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .header-right p {
+    font-size: 14px;
+  }
+
+  .header-right .loyality-btn,
+  .header-right .logout-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 565px) {
+  .header-right {
+    position: relative;
+  }
+
+  .header-right p {
+    display: none;
+  }
+
+  .header-right .toggle-options {
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+  }
+
+  .header-right .action-buttons {
+    position: absolute;
+    top: calc(100% + 30px);
+    right: 0;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 10px 0;
+  }
+
+  .header-right:hover .action-buttons {
+    display: flex;
+  }
+
+  .action-buttons a {
+    white-space: nowrap;
+    margin: 10px;
+  }
+
+  .main-msg{
+    font-size: 20px;
+  }
+  .bottom-text{
+    font-size: 16px;
+  }
+}
