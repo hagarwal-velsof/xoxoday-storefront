@@ -9,5 +9,12 @@
     "require": {
         "xoxoday/sms": "dev-main",
         "doctrine/dbal": "^3.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xoxoday\\Storefront\\StorefrontServiceProvider"
+            ]
+        }
     }
 }
