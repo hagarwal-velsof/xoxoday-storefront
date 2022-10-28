@@ -1,10 +1,10 @@
 <?php
 
-namespace Xoxoday\Storefront;
+namespace Xoxoday\Storefront\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Xoxoday\Storefront\models\State;
+use Xoxoday\Storefront\Models\State;
 
 class StateSeeder extends Seeder
 {
