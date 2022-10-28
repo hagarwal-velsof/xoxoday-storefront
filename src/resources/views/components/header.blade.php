@@ -2,7 +2,7 @@
     <div class="header container-lg">
     @csrf
         <section class="header-left">
-            <a href="{{ url('/redemption') }}" ><img class="header-logo" src="{{asset('theme/assets/img/alcobrew-logo.png')}}" alt="ALCOBREW"></a>
+            <a href="{{ url('/redemption') }}" ><img class="header-logo" src="{{asset('storefront/img/alcobrew-logo.png')}}" alt="ALCOBREW"></a>
         </section>
         <section class="header-right">
             @if($user == 1)
