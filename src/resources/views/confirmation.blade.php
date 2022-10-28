@@ -1,12 +1,12 @@
 <x-storefront::layout>
     
-    <link rel="stylesheet" href="{{asset('theme/assets/css/order_confirmed.css')}}">
+    <link rel="stylesheet" href="{{asset('storefront/css/order_confirmed.css')}}">
 
     <x-storefront::header user='{{ $user_bit }}' totalpoints='{{ $total_points }}'></x-storefront::header>
 
     <main class="main-section">
     <div>
-      <img src="{{asset('theme/assets/img/Merch.png')}}" class="box-img" alt="Order Confirmed">
+      <img src="{{asset('storefront/img/Merch.png')}}" class="box-img" alt="Order Confirmed">
     </div>
     <h2 class="main-msg">Hurray! Your order is confirmed</h2>
     <div class="product-card">
