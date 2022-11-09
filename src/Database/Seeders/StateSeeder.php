@@ -1,10 +1,10 @@
 <?php
 
-namespace Xoxoday\Storefront\Database\Seeders;
+namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Xoxoday\Storefront\Models\State;
+use Xoxoday\Storefront\Models\Xostate;
 
 class StateSeeder extends Seeder
 {
@@ -53,7 +53,7 @@ class StateSeeder extends Seeder
             'PY' => 'Puducherry',
         );
         foreach($indian_all_states as $key => $value){
-            State::create([
+            Xostate::create([
                 'name' => $value,
                 'status' => 1,
             ]);
